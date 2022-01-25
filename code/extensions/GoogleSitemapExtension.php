@@ -138,7 +138,7 @@ class GoogleSitemapExtension extends DataExtension
     public function getTrimmedLink()
     {
         if ($this->owner->hasMethod('AbsoluteLink')) {
-            return rtrim($this->owner->AbsoluteLink(), '/')
+            return rtrim($this->owner->AbsoluteLink(), '/');
         } 
     }
 }
