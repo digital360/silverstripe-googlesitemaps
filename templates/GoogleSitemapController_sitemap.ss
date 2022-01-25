@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<% loop $Items %>
         <url>
-            <loc>$AbsoluteLink</loc>
+            <loc>$TrimmedLink</loc>
            	<% if $LastEdited %><lastmod>$LastEdited.Format(c)</lastmod><% end_if %>
             <% if $ChangeFrequency %><changefreq>$ChangeFrequency</changefreq><% end_if %>
             <% if $GooglePriority %><priority>$GooglePriority</priority><% end_if %>
